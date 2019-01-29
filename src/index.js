@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ContactLIst, } from './App.js';
+import Hello from './App.js';
 import registerServiceWorker from './registerServiceWorker';
+import ContactList from './App.js';
 
-ReactDOM.render(<div><ContactLIst /></div>, document.getElementById('root'));
+ReactDOM.render(<ContactList />, document.getElementById('root'));
 registerServiceWorker();

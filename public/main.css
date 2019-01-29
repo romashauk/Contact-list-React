@@ -1,31 +1,82 @@
-h1{
-  font-size: 40px;
-  text-align: center;
-}
-.contacts{
-  width: 200px;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  border: 10px solid black;
-  margin-left: 40%;
-}
 li{
   list-style: none;
 }
 .contact{
-  text-align: center;
-  border: 5px solid red;
-  margin-top: 20px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 445px;
+  overflow: hidden;
+  margin-left: 40vw;
+  background: #FBD3CA;
+  padding: 20px;
+  padding-bottom: 0;
 }
-.contact-image{
-  width: 80px;
-  height: 80px;
-}
-.search-field{
-  width: 100%;
-  font-size: 30px;
+h3{
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 10px;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 10px;
-  border: 3px solid red;
+  margin-left: 50px;
+}
+input{
+  background: transparent;
+  border: 1px solid black;
+  height: 30px;
+  font-size: 30px;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px  solid black;
+
+}
+.contact__item{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100px;
+  padding-top: 20px;
+  border-bottom: 1px solid #CFCECE;
+  transition: 1s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.contact__item:hover{
+  background: #F6ADAD;
+}
+.contact__name{
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  flex: 0 0 200px;
+  height: 30px;
+  margin-left: 20px;
+}
+.contact__number{
+  height: 20px;
+  flex: 0 0 30%;
+  margin-top: -50px;
+  margin-left: 95px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.transformer{
+  transform: scale(1.05);
+  transition: 1s;
+}
+.contact__address{
+  position: absolute;
+  top: 700px;
+  left:70px;
+  transition: 0.8s;
+}
+.show{
+  display: block;
+  top: 100px;
 }
